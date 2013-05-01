@@ -24,6 +24,7 @@ var fs = require('fs');
 
 var when   = require('when');
 var Q = require('q');
+var deferred = require('deferred');
 // var rsvp = require('rsvp');
 
 
@@ -194,11 +195,16 @@ var runs = [
   // [require('./packages/when2.0.1/'), 500, 'when-2.0.1'],
   // [require('./packages/when2.0.1/'), 1000, 'when-2.0.1'],
 
-  // // The default when is from dev branch 2.1.x
-  [when, 10, 'when-2.1.x'],
-  [when, 100, 'when-2.1.x'],
-  [when, 500, 'when-2.1.x'],
-  [when, 1000, 'when-2.1.x']
+  [deferred, 10, 'deferred'],
+  [deferred, 100, 'deferred'],
+  [deferred, 500, 'deferred'],
+  [deferred, 1000, 'deferred']
+
+  // The default when is from dev branch 2.1.x
+  // [when, 10, 'when-2.1.x'],
+  // [when, 100, 'when-2.1.x'],
+  // [when, 500, 'when-2.1.x'],
+  // [when, 1000, 'when-2.1.x']
 
   // [Q, 10, 'Q'],
   // [Q, 100, 'Q'],
